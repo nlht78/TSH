@@ -1,0 +1,11 @@
+node_modules
+
+.env 
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
+.env.me
+dist
+
+src/logs 
