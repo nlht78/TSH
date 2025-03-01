@@ -92,18 +92,16 @@ const NumerologyFAQ = () => {
     <section className='relative py-12 sm:py-16 md:py-20 bg-transparent'>
       {/* Background layer */}
       <div
-        className='absolute inset-0 w-full h-full'
+        className='absolute inset-0 w-full h-full object-cover'
         style={{
           backgroundImage: "url('/assets/back2.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          opacity: '0.15',
+          backgroundRepeat: 'no-repeat ',
+          backgroundAttachment: 'fixed',
+          opacity: '0.2',
         }}
       />
-
-      {/* Gradient overlay */}
-      <div className='absolute inset-0 bg-gradient-to-b from-purple-900/30 via-pink-900/20 to-transparent' />
 
       {/* Content */}
       <div className='relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8'>

@@ -120,7 +120,7 @@ const BlogPosts = () => {
       <div className='absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-purple-900/30' />
       {/* Content */}
       <div className='relative z-10 max-w-7xl mx-auto px-4'>
-        <h2 className='text-4xl font-bold text-center text-white mb-12'>
+        <h2 className='text-4xl font-bold text-center text-white mb-12 pt-20'>
           BLOG TRA CỨU THẦN SỐ HỌC
         </h2>
 
@@ -128,7 +128,7 @@ const BlogPosts = () => {
           {/* Main Posts Column */}
           <div className='lg:col-span-2 space-y-8'>
             {/* Featured Post */}
-            <div className='bg-white/95 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]'>
+            <div className='bg-white border border-white rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]'>
               <Link to={mainPosts[0].slug} className='block group'>
                 <div className='relative aspect-[16/9]'>
                   <img
@@ -158,14 +158,14 @@ const BlogPosts = () => {
               {mainPosts.slice(1).map((post) => (
                 <div
                   key={post.id}
-                  className='bg-white/95 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02]'
+                  className='bg-white/95 border border-white backdrop-blur-sm rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02]'
                 >
                   <Link to={post.slug} className='block group'>
                     <div className='relative aspect-[4/3]'>
                       <img
                         src={post.image}
                         alt={post.title}
-                        className='w-full h-full object-cover'
+                        className='w-full h-auto object-cover'
                       />
                       <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity' />
                     </div>
