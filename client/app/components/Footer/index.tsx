@@ -31,7 +31,7 @@ export default function Footer() {
             <img
               src='/assets/logo-text.png'
               alt='Logo'
-              className='h-20 sm:h-24 md:h-30 mb-8 md:mb-12'
+              className='h-30 sm:h-30 md:h-30 mb-10 md:mb-12'
             />
             {/* Facebook Plugin - Responsive width */}
             <div className='mb-6 sm:mb-8'>
